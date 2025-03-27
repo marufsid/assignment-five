@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBoard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="px-20 pt-2 pb-10 bg-slate-100">
+    <div class="navbar bg-base-100 rounded-xl justify-between p-4 my-5 shadow-md">
+      <div class="flex items-center gap-2">
+        <img class="w-10" src="assets/logo.png" alt="logo" />
+        <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+      </div>
+      <button class="btn btn-primary">Back to Desk</button>
+    </div>
+    <h2 class="text-2xl font-bold place-self-center pb-5">Blogs</h2>
+    <div class="space-y-5">
+        <div class="bg-white rounded-xl">
+            <h3 class="text-lg font-medium p-4 border-b-3 border-dotted border-gray-200">Question-1: What are the different ways to select an element in the DOM?</h3>
+            <h3 class="text-gray-500 p-4">There are many ways to select an element in the DOM. <br> 1. Selecting by ID <br> 2. Using CSS Selector <br> 3. Selecting by Class Name <br> 4. Selecting by Tag Name <br> 5. Selecting by Name Attribute</h3>
+        </div>
+        <div class="bg-white rounded-xl">
+            <h3 class="text-lg font-medium p-4 border-b-3 border-dotted border-gray-200">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+            <h3 class="text-gray-500 p-4">The core difference between innerHTML, innerText, and textContent lies in how they handle HTML markup and rendered text.</h3>
+        </div>
+        <div class="bg-white rounded-xl">
+            <h3 class="text-lg font-medium p-4 border-b-3 border-dotted border-gray-200">Question-3: What is event delegation in the DOM?</h3>
+            <h3 class="text-gray-500 p-4">Event delegation is a powerful technique in JavaScript that leverages event bubbling to efficiently handle events on a large number of elements.</h3>
+        </div>
+        <div class="bg-white rounded-xl">
+            <h3 class="text-lg font-medium p-4 border-b-3 border-dotted border-gray-200">Question-4: What is event bubbling in the DOM?</h3>
+            <h3 class="text-gray-500 p-4">Event bubbling is a phase in the event propagation process where an event starts from the target element and propagates upward through its ancestors, eventually reaching the document object.
+            </h3>
+        </div>
+        <div class="bg-white rounded-xl">
+            <h3 class="text-lg font-medium p-4 border-b-3 border-dotted border-gray-200">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+            <h3 class="text-gray-500 p-4">JavaScript provides methods to create, add, and remove elements from the DOM. For example: <br> 1. Use document.createElement() to create a new element. <br> 2. Append to an Existing Element. <br> 3. Remove a Child Element</h3>
+        </div>
+    </div>
+  </body>
+</html>
