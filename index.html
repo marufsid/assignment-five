@@ -12,7 +12,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="px-20 pt-2 pb-10 bg-slate-100">
-    <div class="navbar bg-base-100 rounded-xl justify-between px-4 py-2 my-5 shadow-md">
+    <div
+      class="navbar bg-base-100 rounded-xl justify-between px-4 py-2 my-5 shadow-md"
+    >
       <div class="flex items-center gap-2">
         <img class="w-10" src="assets/logo.png" alt="logo" />
         <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
@@ -23,7 +25,7 @@
           <h1 id="total-number" class="font-bold text-2xl">23</h1>
         </div>
         <div class="p-3 bg-slate-100 rounded-full">
-          <img class="w-9" src="./assets/theme-btn.png" alt="theme-btn" />
+          <img id="change-color" class="w-9" src="./assets/theme-btn.png" alt="theme-btn" />
         </div>
       </div>
     </div>
@@ -45,7 +47,8 @@
               <h1 id="task-number" class="font-bold text-2xl">6</h1>
             </div>
           </div>
-          <div id="discover"
+          <div
+            id="discover"
             class="flex items-center bg-gradient-to-r from-blue-700 to-blue-400 gap-5 pl-10 pr-30 py-5 rounded-xl"
           >
             <img class="w-16" src="./assets/board.png" alt="board" />
@@ -60,10 +63,7 @@
             <div class="bg-white rounded-full p-4">
               <img src="assets/calender.png" alt="calender" />
             </div>
-            <h1 class="text-xl">
-              Wed , <br />
-              <span class="font-bold text-2xl">Jul 28 2025</span>
-            </h1>
+            <h1 id="current-date" class="text-xl font-semibold"></h1>
           </div>
         </div>
         <!-- Task Cards -->
@@ -85,7 +85,9 @@
                 <p class="text-gray-600">Deadline</p>
                 <h3 class="font-semibold">21 March 2025</h3>
               </div>
-              <button id="btn-one" class="btn btn-primary">Completed</button>
+              <button id="btn-one" class="btn disable btn-primary">
+                Completed
+              </button>
             </div>
           </div>
           <div class="bg-slate-100 rounded-xl p-5 shadow-md">
@@ -102,7 +104,9 @@
                 <p class="text-gray-600">Deadline</p>
                 <h3 class="font-semibold">21 March 2025</h3>
               </div>
-              <button class="btn btn-primary">Completed</button>
+              <button id="btn-two" class="btn disable btn-primary">
+                Completed
+              </button>
             </div>
           </div>
           <div class="bg-slate-100 rounded-xl p-5 shadow-md">
@@ -119,7 +123,9 @@
                 <p class="text-gray-600">Deadline</p>
                 <h3 class="font-semibold">21 March 2025</h3>
               </div>
-              <button class="btn btn-primary">Completed</button>
+              <button id="btn-three" class="btn disable btn-primary">
+                Completed
+              </button>
             </div>
           </div>
           <div class="bg-slate-100 rounded-xl p-5 shadow-md">
@@ -136,7 +142,9 @@
                 <p class="text-gray-600">Deadline</p>
                 <h3 class="font-semibold">21 March 2025</h3>
               </div>
-              <button class="btn btn-primary">Completed</button>
+              <button id="btn-four" class="btn disable btn-primary">
+                Completed
+              </button>
             </div>
           </div>
           <div class="bg-slate-100 rounded-xl p-5 shadow-md">
@@ -153,7 +161,9 @@
                 <p class="text-gray-600">Deadline</p>
                 <h3 class="font-semibold">21 March 2025</h3>
               </div>
-              <button class="btn btn-primary">Completed</button>
+              <button id="btn-five" class="btn disable btn-primary">
+                Completed
+              </button>
             </div>
           </div>
           <div class="bg-slate-100 rounded-xl p-5 shadow-md">
@@ -170,7 +180,9 @@
                 <p class="text-gray-600">Deadline</p>
                 <h3 class="font-semibold">21 March 2025</h3>
               </div>
-              <button class="btn btn-primary">Completed</button>
+              <button id="btn-six" class="btn disable btn-primary">
+                Completed
+              </button>
             </div>
           </div>
         </div>
@@ -184,16 +196,17 @@
             <img class="w-7" src="assets/activity.png" alt="activity" />
             <h3 class="font-semibold text-xl">Activity Log</h3>
           </div>
-          <button id="clear-history" class="btn btn-primary">Clear History</button>
+          <button id="clear-history" class="btn btn-primary">
+            Clear History
+          </button>
         </div>
-        <section id="task-complete" class="p-5 space-y-5">
-          <p class="bg-slate-100 p-2 rounded-lg">You have completed the task Fix Mobile Button issue at 1:26;53 AM</p>
-        </section>
+        <section id="task-complete" class="p-5 space-y-5"></section>
       </div>
     </div>
     <script src="./script/discover.js"></script>
     <script src="./utilities/utilities.js"></script>
     <script src="./script/task-one.js"></script>
+    <script src="./script/task-two.js"></script>
     <script src="./utilities/toggle.js"></script>
   </body>
 </html>
